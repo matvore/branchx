@@ -15,7 +15,9 @@ branchx is a simple extension to Git which serves two purposes:
 Run:
 
 ```
-$ curl -L https://raw.githubusercontent.com/google/branchx/master/wrapper.sh > binpath/commandname
+$ dest=binpath/commandname
+$ curl -L https://raw.githubusercontent.com/matvore/branchx/master/wrapper.sh > "$dest"
+$ chmod +x "$dest"
 ```
 
 Where `binpath` is some directory in $PATH, and `commandname` is whatever you
